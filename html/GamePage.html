@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../t.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="styleSheet" href="../css/gamePage.css">
+  <title>2048</title>
+</head>
+
+<body>
+  <div id="menu">
+    <ul>
+      <li><a id="login" href="../html/firstPage.html">להתחברות</a></li>
+      <li><a href="../html/highScor.html">שיאים</a></li>
+      <li class="dropdown">
+        <a o href="javascript:void(1)" class="dropbtn">שמע</a>
+        <div class="dropdown-content">
+          <a href="#" id="on"> 🔊 פעיל</a>
+          <a href="#" id="off"> 🔇 כבוי</a>
+
+
+        </div>
+      </li>
+      <li class="dropdown">
+        <a onclick="menu()" href="javascript:void(1)" class="dropbtn">גודל לוח </a>
+        <div class="dropdown-content">
+          <a href="#" id="Size1"> 4 x 4</a>
+          <a href="#" id="Size2"> 8 x 8</a>
+          <a href="#" id="Size3"> 16 x 16 </a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a onclick="menu()" href="javascript:void(1)" class="dropbtn"> עזרה</a>
+        <div class="dropdown-content">
+          <a onclick="Popup()" href="#"> הוראות</a>
+          <a onclick="Popup2()" href="#"> אודות</a>
+          <a href="#" id="start"> התחל מחדש</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="popup">
+    <div id="popup-content">
+      <button id="popup-close">✕</button>
+      <h2 id="pH" class="potext"> הוראות</h2>
+      <p id="pP" class="potext"> </p>
+    </div>
+  </div>
+  <div id="Main">
+    <div id="game"></div>
+    <div id="notice"></div>
+    <div id="image">
+      <img id="img" src="../image/first.png">
+    </div>
+  </div>
+
+
+  <script src="../js/Main.js"></script>
+  <script src="../js/GamePage.js"></script>
+</body>
+
+</html>
